@@ -117,7 +117,7 @@ def custom_remove(input_list, value):
         True
 
     """
-    input_list.remove(value)
+    input_list[input_list.index(value):input_list.index(value)+1] = []
 
 
 def custom_pop(input_list):
@@ -135,7 +135,7 @@ def custom_pop(input_list):
         ['Jan', 'Feb']
 
     """
-    input_list[:-1]
+    return input_list.pop()
 
 
 def custom_index(input_list, value):
